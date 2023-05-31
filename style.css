@@ -1,0 +1,578 @@
+/*I've removed margin and padding for the whoe page*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(-45deg, #f8e5e1, #ffe6f0, #f6fcff, #fcfffe);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*Below I'm setting where I'd like the menu items to appear and at how much pixels*/
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+/*I've set the navbar menu items to appear on the far right of the page*/
+
+nav {
+	flex: 1;
+	text-align: right;
+}
+
+/*I've removed the bullet points from the lists (menu items) */
+
+nav ul {
+	display: inline-block;
+	list-style-type: none;
+}
+
+/*I've now set the menu items to appear horizontical on the web page with a set margin on 20px*/
+
+nav ul li {
+	display: inline-block;
+	margin-right: 35px;
+}
+
+/*Removing the line under the text and adding color to the navbar text*/
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+/*Adding color to the paragraph text*/
+
+p {
+	color: #555;
+}
+
+/*Below I've set the width of the container, centered it and set padding for the left and right side of the content*/
+
+.container {
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/*Setting the banner image to fit the page properly*/
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*Setting the column sizes*/
+.col-2 {
+	flex-basis: 50%;
+	min-width: 300px;
+}
+
+/*Setting the size of the background image. Added padding to the top, bottom and left of the image*/
+
+.col-2 img {
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.col-2 h1 {
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+
+/*Below I've set up the button's color, where it should display and its color. I've also set the border radius so the button appears rounded oval-like*/
+
+.btn {
+	display: inline-block;
+	background: linear-gradient(90deg, deeppink, blueviolet);
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+
+/*Below I've added a Hover effect on the btn*/
+
+.btn:hover {
+	background: #563434;
+}
+
+.header .row {
+	margin-top: 70px;
+}
+
+.categories {
+	margin: 70px 0;
+}
+
+.col-3 {
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.col-3 img {
+	width: 100%;
+}
+
+/*In the below container I've centered the featured images and set the padding and margin from the left and right so the images appear in  the middle*/
+
+.small-container {
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.col-4 {
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-4 img {
+	width: 100%;
+}
+
+/*Styling the add to cart button*/
+
+.add-cart {
+	position: absolute;
+	width: 92.5%;
+	background-color: gray;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+}
+
+.col-4:hover .cart1,
+.col-4:hover .cart2,
+.col-4:hover .cart3,
+.col-4:hover .cart4,
+.col-4:hover .cart5,
+.col-4:hover .cart6,
+.col-4:hover .cart7,
+.col-4:hover .cart8,
+.col-4:hover .cart9,
+.col-4:hover .cart10,
+.col-4:hover .cart11,
+.col-4:hover .cart12,
+.col-4:hover .cart13,
+.col-4:hover .cart14,
+.col-4:hover .cart15,
+.col-4:hover .cart16,
+.col-4:hover .cart25,
+.col-4:hover .cart26,
+.col-4:hover .cart27,
+.col-4:hover .cart28 {
+	bottom: 55px;
+	opacity: 1;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.col-4:hover .cart17,
+.col-4:hover .cart18,
+.col-4:hover .cart19,
+.col-4:hover .cart20,
+.col-4:hover .cart21,
+.col-4:hover .cart22,
+.col-4:hover .cart23,
+.col-4:hover .cart24 {
+	bottom: 80px;
+	opacity: 1;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/*Here I'm creating a space between the title and the images below it and changed the title color*/
+
+.title {
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+
+/*Below I've set a colored line under the title featured products*/
+
+.title::after {
+	content: '';
+	background: linear-gradient(90deg, deeppink, blueviolet);
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/*Below I'll be changing the color of the h4 text as well as the font*/
+
+h4 {
+	color: #555;
+	font-weight: normal;
+}
+
+/*Below I'm setting the size of the price text of the items*/
+
+.col-4 p {
+	font-size: 14px;
+}
+
+/*The stars icons originally appeared grey so below I will change the color to fit the theme of the whole site*/
+
+.rating .fa {
+	color: rgb(174, 95, 211);
+}
+
+/*Below I will add a hover effect on the product items so that when the mouse hovers over each item the image moves upwards*/
+
+.col-4:hover {
+	transform: translateY(-5px);
+}
+
+/*I've set the background color and the margin and padding*/
+
+.offer {
+	background: radial-gradient(#fff, #ffd6d6);
+	margin-top: 80px;
+	padding: 30px 0;
+}
+
+/*Below I'm setting the offer image size*/
+
+.col-2 .offer-img {
+	padding: 50px;
+}
+
+/*Below I'll be changing the color of the small text to a greyish color*/
+
+small {
+	color: #555;
+}
+
+/*Below is for the testimonials section */
+
+.testimonials {
+	padding-top: 50px;
+}
+
+.testimonials .col-3 {
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0, 1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+/* Below I've set a hover for the testimonials section. When a testimonial is clicked on, it hovers upwards*/
+
+.testimonials .col-3:hover {
+	transform: translateY(-10px);
+}
+
+.fa.fa-quote-left {
+	font-size: 34px;
+	color: linear-gradient(90deg, deeppink, blueviolet);
+}
+
+.fa.fa-quote-right {
+	font-size: 34px;
+	color: linear-gradient(90deg, deeppink, blueviolet);
+}
+
+/*Below I've set the color of the paragaph to grey*/
+
+.col-3 p {
+	font-size: 12px;
+	margin: 12px 0;
+	color: #777;
+}
+
+/*Below I've set the font size and color of the names of those who sent in testimonials*/
+
+.testimonials .col-3 h3 {
+	font-weight: 600;
+	color: #555;
+	font-size: 16px;
+}
+
+/*Below I've set my footer color and padding instructions*/
+
+.footer {
+	background: black;
+	color: grey;
+	font-size: 14;
+	padding: 60px 0 20px;
+}
+
+/*I've set the color of the footer text */
+
+.footer p {
+	color: #8a8a8a;
+}
+
+/*Below I've set the color of the heading text in the footer*/
+
+.footer h3 {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer-col-1 {
+	flex-basis: 30%;
+}
+
+.footer-col-2 {
+	flex: 1;
+	text-align: center;
+}
+
+.footer-col-2 img {
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+	flex-basis: 12%;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.app-logo {
+	margin-top: 20px;
+}
+
+.app-logo img {
+	width: 140px;
+}
+
+.footer hr {
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.menu-icon {
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+}
+
+/*Cart*/
+
+.cart img {
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.cart a {
+	display: inline-block;
+	background-color: royalblue;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.cart span {
+	padding-left: 5px;
+}
+
+/*Setting up the media query for the menu so that the site is responsive */
+
+@media only screen and (max-width: 800px) {
+	nav ul {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a {
+		color: #fff;
+	}
+
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.row {
+		text-align: center;
+	}
+
+	.col-2,
+	.col-3,
+	.col-4 {
+		flex-basis: 100%;
+	}
+}
+
+/*CART CSS*/
+
+.products-container {
+	max-width: 650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 100px;
+}
+
+.products-container ion-icon {
+	cursor: pointer;
+}
+
+.products {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.products img {
+	width: 75px;
+}
+
+.basketTotalContainer {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.basketTotalTitle {
+	width: 30%;
+	padding-top: 5px;
+}
+
+.basketTotal {
+	width: 10%;
+	padding-top: 1px;
+	padding-left: 577px;
+}
+
+.product-header {
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightgrey;
+	margin: 0 auto;
+}
+
+.product-title {
+	width: 45%;
+}
+
+.price {
+	width: 15%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.quantity {
+	width: 30%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.total {
+	width: 10%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.product {
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid lightgrey;
+}
+
+.quantity {
+	width: 30%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/

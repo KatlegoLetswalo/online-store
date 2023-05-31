@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Beauty Bikinis | Swimwear for all body types </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+
+
+    <style>
+
+        /*Below is a paragraph animation styled text that will appear on the About page*/
+        p,
+        h1,
+        h3 {
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Below is the about page for my Online store -->
+
+    <!-- I've enclosed all the div content under the header class-->
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <!--Below I've added my logo image to the top left of the web page -->
+                <div class="logo">
+                    <img src="images/logo22.png" width="130px" alt="Logo image">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="sale.html">SALE</a> </li>
+                        <li><a href="about.html">ABOUT US</a> </li>
+                        <li> <a href="loginpage.html">SIGN IN</a></li>
+                        <li class="cart"><a href="cart.html">
+                            <img
+                                src="images/cart.png"
+                                width="30px"
+                                height="30px"
+                                alt=""
+                            /><span>0</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-2">
+
+                    <h1>ABOUT US</h1>
+
+                    <h3> Welcome to Beach Beauty Bikinis! </h3>
+                    <br>
+                    <p> Self-love is the best love and that is why we at Beach Beauty Bikini's prioritize making
+                        swimwear
+                        that everyone will feel like their best selves in! We have a wide variety of designs and colors
+                        that caters to all tastes and body shapes. Take a sneak peek at our products section and go
+                        crazy!
+                    </p>
+
+                    <a href="products.html" class="btn">Shop Now &#10142;</a>
+                </div>
+                <img src="images/aboutus1.png" width="440px" height="600">
+            </div>
+
+        </div>
+
+        <script src="main.js"></script>
+
+</body>
+
+
+
+</html>

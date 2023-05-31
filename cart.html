@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Beauty Bikinis | Swimwear for all body types </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+
+
+    <style>
+        /*Cart styling*/
+
+
+        .cart-page {
+            margin: 80px auto;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /**/
+
+
+        .cart-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /**/
+
+        th {
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+            background: black;
+            font-weight: normal;
+        }
+
+        /**/
+
+        td {
+            padding: 10px 5px;
+
+        }
+
+        /*Input styling*/
+
+        td input {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+
+        }
+
+        /*Styling remove button*/
+
+        td a {
+            color: red;
+            font-size: 12px;
+        }
+
+        /**/
+
+        td img {
+
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Below is the home page for my Online store -->
+
+    <!-- I've enclosed all the div content under the header class-->
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <!--Below I've added my logo image to the top left of the web page -->
+                <div class="logo">
+                    <img src="images/logo22.png" width="130px" alt="Logo image">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="sale.html">SALE</a> </li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li> <a href="loginpage.html">SIGN IN</a></li>
+                        <li class="cart"><a href="cart.html"><img src="images/cart.png" width="20px" height="20px" alt="">CART<span>0</span></a></li>
+
+                    </ul>
+
+                </nav>
+
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+
+            </div>
+
+
+
+            <!-- Add to cart section -->
+
+
+            <div class='products-container' class='cart-page'>
+                <div class='product-header'>
+                    <h5 class='product-title'> PRODUCT</h5>
+                    <h5 class="price">PRICE</h5>
+                    <h5 class="quantity">QUANTITY</h5>
+                    <h5 class="total">TOTAL</h5>
+
+                </div>
+
+                <div class="products">
+
+                </div>
+
+              
+            </div>
+
+
+            <script src="main.js"></script>
+
+
+</body>
+
+</html>
